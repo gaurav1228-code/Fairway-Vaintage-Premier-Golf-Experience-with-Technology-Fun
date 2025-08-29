@@ -1,0 +1,45 @@
+.page4{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 110px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    gap: 110px;
+}
+.page4 #carouselExampleIndicators{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.page4 img{
+    width: 650px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 17px;
+    z-index: 9;
+}
+#sideinfo{
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vh;
+}
+#sideinfo h1{
+    font-weight: 900;
+}
+#sideinfo{
+    line-height: 1.9;
+}
+.bttn{
+    border: 3px solid #95C11E;
+    border-radius:22px;
+    color: #fff;
+    padding: 6px 24px;
+    font-size: 14px;
+    background-color: transparent;
+}

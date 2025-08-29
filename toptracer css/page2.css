@@ -1,0 +1,155 @@
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9;
+    overflow-x: hidden;
+}
+
+.faq-section {
+    width: 80%;
+    margin: 50px;
+    margin-top: 17vh;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border-top: 1px solid #95C11E;
+    border-bottom: 1px solid #95C11E;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background: rgba(149, 193, 30, 0.05);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.faq-question span {
+    color: #95C11E;
+    margin-right: 15px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.faq-item.active .faq-question div {
+    color: #95C11E;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 15px 5px;
+}
+
+.faq-toggle {
+    border: 1px solid #95C11E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-toggle i {
+    font-size: 20px;
+    color: #fff;
+}
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  gap: 2.5vw;
+}
+.slider {
+  display: flex;
+  gap: 2.5vw;
+  flex-shrink: 0;
+  height: 60vh;
+}
+
+
+.cardd {
+    height: 90%;
+    width: 22.5vw;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.177);
+    position: relative;
+}
+
+.cardd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cardd .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.149);
+    border-radius: 20px;
+}
+
+.cardd #heading {
+    position: absolute;
+    left: 8%;
+    bottom: 8%;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.hover p {
+    position: absolute;
+    opacity: 0;
+}
+
+.cardd:hover .overlay {
+    background: #b2e428;
+}
+
+.cardd:hover #heading {
+    top: 30%;
+}
+
+.cardd:hover .hover p {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    padding: 0 25px;
+}
+
+

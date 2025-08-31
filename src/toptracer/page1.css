@@ -17,13 +17,13 @@ body{
     top: 32%;
     left: 12%;
 }
-.content h4{
+.content > h4{
     font-size: 20px;
     font-weight: 900;
     color: #95C11E;
     margin-bottom: 2vh;
 }
-.content h1{
+.content > h1{
     width: 50%;
     font-size: 13vh;
     font-weight: 900;
@@ -39,7 +39,7 @@ body{
     -webkit-text-stroke: 2px #95C11E;
     z-index: -8;
 }
-.content p{
+.content > p{
     width: 40%;
     font-size: 2.8vh;
     line-height: 1.9;
@@ -75,7 +75,7 @@ body{
   z-index: 1;
   filter: drop-shadow(0 0 20px rgba(145, 253, 51, 0.6));
 }
-.about h1{
+.about> h1{
     position: absolute;
     top: 33%;
     left: 45%;
@@ -83,7 +83,7 @@ body{
     font-weight: 900;
     line-height: 0.9;
 }
-.about p{
+.about> p{
     position: absolute;
     top: 45%;
     left: 45%;

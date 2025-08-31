@@ -8,32 +8,32 @@ body{
 }  
 .page1{
     width: 100%;
-    height: 100vh;
+    min-height: 120vh;
     position: relative;
     z-index: 9;
     overflow-x: hidden;
 }
-.page1 img{
+.page1>img{
     width: 52%;
-    height: 90%;
+    height: 80%;
     position: absolute;
-    right: -4%;
-    top: 20%;
+    right: -3%;
+    top: 15%;
     object-fit: cover;
     border-radius: 22px;
 }
 .content{
     position: absolute;
-    top: 32%;
+    top: 25%;
     left: 12%;
 }
-.content h4{
-    font-size: 20px;
+.content > h4{
+    font-size: 22px;
     font-weight: 900;
     color: #95C11E;
     margin-bottom: 2vh;
 }
-.content h1{
+.content > h1{
     width: 50%;
     font-size: 13vh;
     font-weight: 900;
@@ -43,7 +43,7 @@ body{
     content: "GOLF LESSONS";
     position: absolute;
     width: 50%;
-    top: 35px;
+    top: 38px;
     left: -5px;
     color: #000;
     -webkit-text-stroke: 2px #95C11E;
@@ -53,5 +53,5 @@ body{
     width: 40%;
     font-size: 2.8vh;
     line-height: 1.9;
-    margin-top: 2vh;
+    margin-top: 3.5vh;
 }

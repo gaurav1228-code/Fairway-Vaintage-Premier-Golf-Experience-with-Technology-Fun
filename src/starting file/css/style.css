@@ -41,10 +41,10 @@ video{
     z-index: 99;
 }
 #cursor-blur{
-    width: 400px;
-    height: 400px;
-    background-color: #96c11e5f;
-    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    background-color: #c4ff215b;
+    border-radius: 40%;
     position: fixed;
     filter: blur(50px);
     z-index: 7;

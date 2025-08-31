@@ -32,14 +32,18 @@ function main() {
 }
 function mouse() {
   document.addEventListener("mousemove", (dets) => {
-    gsap.set(cur, {
+    gsap.to(cur, {
       x: dets.x + 15,
       y: dets.y + 15,
+      duration: 0.4,
+      ease: "back.out(1)",
       overwrite: "auto",
     });
-    gsap.set(blurrr, {
+    gsap.to(blurrr, {
       x: dets.x - 200,
       y: dets.y - 200,
+      duration: 0.4,
+      ease: "back.out(1)",
       overwrite: "auto",
     });
   });
@@ -52,7 +56,7 @@ function mouse() {
         cursor: "pointer",
         border: "1px solid #fff",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
     });
     elem.addEventListener("mouseleave", () => {
@@ -61,30 +65,28 @@ function mouse() {
         backgroundColor: "#95C11E",
         border: "none",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
     });
   });
 
-  let footera = document.querySelectorAll(".footer a");
+  let footer = document.querySelectorAll(".footer a");
 
-  footera.forEach((elem1) => {
+  footer.forEach((elem1) => {
     elem1.addEventListener("mouseenter", () => {
       gsap.to(cur, {
-        scale: 4,
+        scale: 3,
         backgroundColor: "transparent",
         cursor: "pointer",
         border: "1px solid #fff",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
 
-      let h2 = elem1.querySelector("h2");
-
-      gsap.to(h2, {
+      gsap.to(elem1, {
         color: "#fff",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
     });
 
@@ -94,15 +96,13 @@ function mouse() {
         backgroundColor: "#95C11E",
         border: "none",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
 
-      let h2 = elem1.querySelector("h2");
-
-      gsap.to(h2, {
+      gsap.to(elem1, {
         color: "#000",
         duration: 0.3,
-        ease: "back.out(1)",
+        ease: "power2.out",
       });
     });
   });

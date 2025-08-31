@@ -106,7 +106,7 @@
     position: relative;
 }
 
-.cardd img {
+.cardd > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -129,7 +129,7 @@
     font-weight: 900;
 }
 
-.hover p {
+.hover > p {
     position: absolute;
     opacity: 0;
 }
@@ -142,7 +142,7 @@
     top: 30%;
 }
 
-.cardd:hover .hover p {
+.cardd:hover .hover > p {
     position: absolute;
     top: 45%;
     opacity: 1;

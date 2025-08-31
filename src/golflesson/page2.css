@@ -1,0 +1,91 @@
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 9;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page2 > h1{
+    padding: 10vh 0;
+    font-size: 7vh;
+    font-weight: 900;
+}
+#lesson{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.headd{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.headd> h1{
+    font-size: 4.8vh;
+   font-weight: 800;
+}
+.lesscard{
+    width:84%;
+    height: 80%;
+    position: relative;
+    
+    border-radius: 15px;
+    background-color: #a2d522;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 7%;
+}
+.lesscard #img1{
+    width: 39%;
+    height: 93%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.lesscard .lesscontent{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 20px;
+    padding-top: 60px;
+}
+.lesscontent > h2{
+    font-size: 4.5vh;
+    font-weight: 900;
+    color: black;
+}
+.lesscontent > p{
+    color: black;
+    font-size: 2.7vh;
+    font-weight: 500;
+    line-height: 1.9;
+    z-index: 3;
+}
+.lesscontent .bttn1{
+    width: 260px;
+    border-radius:50px;
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 16px;
+    background-color:black; 
+}
+.lesscard #img2{
+    width: 20%;
+    height: 130%;
+    opacity: 0.5;
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
